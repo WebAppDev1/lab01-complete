@@ -1,9 +1,15 @@
-// add message to console
-console.log('Hello! We use this a lot for testing.');
+/* If you're feeling fancy you can add interactivity 
+    to your site with Javascript */
 
-// show/hide function
+// prints "hi" in the browser's dev tools console
+console.log("Hello from the Web App Dev 1 lab!");
+
+function likeIt(){
+  alert('Thanks! You\'re okay too');
+}
+
 function showHide() {
-  let readMoreDiv = document.getElementById("readmore");
+  var readMoreDiv = document.getElementById("readmore");
   readMoreDiv.style.color = "green";
   if (readMoreDiv.style.display === "block") {
     readMoreDiv.style.display = "none";
@@ -12,15 +18,14 @@ function showHide() {
   }
 }
 
-// welcome user function
 function welcomeUser() {
-  let username = prompt("What's your name?");
-  let welcomeUserDiv = document.getElementById("welcomeuser");
+  var username = prompt("What's your name?");
+  var welcomeUserDiv = document.getElementById("welcomeuser");
   welcomeUserDiv.style.display = "block";
   document.getElementById('welcomeuser').innerHTML = '<p> Hello, ' + username + ', looking forward to hearing your playlists! Click this message to close it.</p>';
+  welcomeUserDiv.style.cursor = "pointer";
 }
 
-// hide welcome function
 function hideWelcome() {
   let welcomeUserDiv = document.getElementById("welcomeuser");
   if (welcomeUserDiv.style.display === "block") {
