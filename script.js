@@ -29,6 +29,8 @@ redbtn.addEventListener("click", () => {
   welcomeUserDiv.style.cursor = "pointer";
 });
 
+// exercise solution
+
 const message = document.querySelector("#welcomeuser");
 
 message.addEventListener("click", () => {
