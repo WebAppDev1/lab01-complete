@@ -1,72 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
     <title>Welcome to the Playlist App!</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- import the SemanticUI stylesheet -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.css">
     
     <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css">
-    
+    <link rel="stylesheet" href="/style.css" />
+
     <!-- import the SemanticUI and jQuery javascript files -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+        crossorigin="anonymous">
+    </script>
+    <script  src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.js"></script>
     
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
-  </head>  
+  </head>
   <body>
-  <section class="ui container">
+    <section class="ui container">
 
-    <section class="ui two column grid segment">
+      <section class="ui two column grid segment">
 
-      <div class="ui column">
-        <h2>Welcome to the Playlist App!</h2>
-          <p>
-            This app will allow users to create and maintain a collection of playlists.
-          </p>
-          <div class="buttons">
-            <button class="ui blue button" onclick="showHide()">
-              Read more <i class="arrow circle right icon"></i>
-            </button>
-            <button class="ui green button" onclick="likeIt()">
-              Like it? <i class="thumbs up icon"></i>
-            </button>
-            <button class="ui red button" onclick="welcomeUser()">
-              Who are you? <i class="user icon"></i>
-            </button>
-          </div>
-        <div id="readmore" class="ui message">
-          <p>
-            Over the coming months, we will add CRUD (Create, Read, Update, and Delete) functionality to this app. Users will also be able to create an account, log in, and upload images to the app.
-          </p>  
+        <div class="ui column">
+          <h2>Welcome to the Playlist App!</h2>
+            <p>
+              This app will allow users to create and maintain a collection of playlists.
+            </p>
+            <div class="buttons">
+              <button class="ui blue button">
+                Read more <i class="arrow circle right icon"></i>
+              </button>
+              <button class="ui green button">
+                Like it? <i class="thumbs up icon"></i>
+              </button>
+              <button class="ui red button">
+                Who are you? <i class="user icon"></i>
+              </button>
+            </div>
         </div>
-        <div id="welcomeuser" class="ui message" onclick="hideWelcome()"> </div>
-      </div>
 
-      <div class="ui column">
-        <div class="ui grid">
-          <div class="ui eight wide column">
-            <img class="ui small circular image" src="https://cdn.glitch.com/a2a19cc8-fcc4-4bb5-95be-95a3dfc18178%2Fdirtycomputer.jpg?v=1578912435355"> 
-          </div>
-          <div class="ui eight wide column">
-            <img class="ui small circular image" src="https://cdn.glitch.com/a2a19cc8-fcc4-4bb5-95be-95a3dfc18178%2Fhelplessnessblues.jpg?v=1578912435377">
-          </div>
-          <div class="ui eight wide column">
-            <img class="ui small circular image" src="https://cdn.glitch.com/a2a19cc8-fcc4-4bb5-95be-95a3dfc18178%2Ftrials.jpg?v=1578912434728">
-          </div>
-          <div class="ui eight wide column">
-            <img class="ui small circular image" src="https://cdn.glitch.com/a2a19cc8-fcc4-4bb5-95be-95a3dfc18178%2Ffreetownsound.jpg?v=1578912434892">
-          </div>
+        <div class="ui column">
+
         </div>
-      </div>
+
+      </section>
 
     </section>
-
-  </section>
   </body>
 </html>
