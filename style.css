@@ -24,3 +24,11 @@ video {
   height: auto;
   max-width: 100%;
 }
+
+#readmore {
+  display: none;
+}
+
+#welcomeuser {
+  display: none;
+}

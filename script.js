@@ -3,31 +3,34 @@
 
 console.log("Hello from the Web App Dev 1 lab!");
 
-function likeIt(){
-  alert('Thanks! You\'re okay too');
-}
+const greenbtn = document.querySelector(".green");
 
-function showHide() {
-  let readMoreDiv = document.getElementById("readmore");
-  readMoreDiv.style.color = "green";
-  if (readMoreDiv.style.display === "block") {
-    readMoreDiv.style.display = "none";
-  } else {
-    readMoreDiv.style.display = "block";
-  }
-}
+greenbtn.addEventListener("click", () => alert("Thanks! You're okay too"));
 
-function welcomeUser() {
+const bluebtn = document.querySelector(".blue");
+
+bluebtn.addEventListener("click", () => {
+    let readMoreDiv = document.querySelector("#readmore");
+    if (readMoreDiv.style.display === "block") {
+      readMoreDiv.style.display = "none";
+    } else {
+      readMoreDiv.style.display = "block";
+    }
+});
+
+const redbtn = document.querySelector(".red");
+
+redbtn.addEventListener("click", () => {
   let username = prompt("What's your name?");
-  let welcomeUserDiv = document.getElementById("welcomeuser");
+  let welcomeUserDiv = document.querySelector("#welcomeuser");
   welcomeUserDiv.style.display = "block";
-  document.getElementById('welcomeuser').innerHTML = '<p> Hello, ' + username + ', looking forward to hearing your playlists! Click this message to close it.</p>';
+  document.querySelector("#welcomeuser").innerHTML 
+    = `<p> Hello, ${username}, looking forward to hearing your playlists! Click this message to close it.</p>`;
   welcomeUserDiv.style.cursor = "pointer";
-}
+});
 
-function hideWelcome() {
-  let welcomeUserDiv = document.getElementById("welcomeuser");
-  if (welcomeUserDiv.style.display === "block") {
-    welcomeUserDiv.style.display = "none";
-  }
-}
+const message = document.querySelector("#welcomeuser");
+
+message.addEventListener("click", () => {
+  message.style.display = "none";
+});
