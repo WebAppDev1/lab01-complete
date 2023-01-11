@@ -36,3 +36,10 @@ const message = document.querySelector("#welcomeuser");
 message.addEventListener("click", () => {
   message.style.display = "none";
 });
+
+const buttons = document.querySelectorAll('button');
+console.log(buttons);
+
+buttons[2].addEventListener("mouseout", () => {
+  console.log("Moved away from button 3");
+});
